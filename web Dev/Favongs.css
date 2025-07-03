@@ -1,0 +1,15 @@
+body{
+    background-color: lightcoral;
+}
+
+img{
+    text-align:center;
+   display: block;
+   margin:0 auto;
+
+}
+
+li{
+    font-size: x-large;
+    color: rosybrown;
+}
