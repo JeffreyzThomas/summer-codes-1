@@ -16,7 +16,7 @@ for ED in EDplan:
           "Model": "Supra",
            "Year": 2014,
            "Engine": "V8"
-           "Wheels": "16in"}
+           "Wheels" "16in"}
 DCar["color"] = "jet black carbine"
 
 
