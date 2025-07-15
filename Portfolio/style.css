@@ -15,7 +15,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/download.jpg);
+    background-image: url(images/jeffery\ .jpg);
     background-size: cover;
     background-position:center;
 }
@@ -92,4 +92,15 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-} 
+}   
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+  width:100%;
+  border-radius: 15px;  
+}
+.about-col-2{
+      flex-basis: 60%;
+}
