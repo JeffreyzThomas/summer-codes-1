@@ -1,6 +1,6 @@
 
 import budget
-mybudget = budget.budgetManager(2500)
+mybudget = budget.BudgetManager(2500)
 
 print("Total Funds: ", mybudget.funds)
 
