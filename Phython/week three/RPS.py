@@ -34,24 +34,3 @@ def IsValidMove(playerMove):
     else:
         return False
 RPS()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
