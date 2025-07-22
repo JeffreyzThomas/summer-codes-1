@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    background: black;
-color: white;
+    background: rgb(45, 25, 0);
+color: rgb(215, 160, 42);
 }
 #header
 {
     width: 100%;
     height: 120vh;
-    background-image: url(images/a706fd44-e2aa-4c79-bb6b-f91b4b5b89cd.png);
+    background-image: url(images/jeffery\ .jpg);
     background-size: cover ;
     background-position:  center;
 }
@@ -37,7 +37,7 @@ margin: 10px 20px;
 }
 nav ul li a
 {
-    color: #fff;
+    color: #353c31;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -47,7 +47,7 @@ nav ul li a::after
     content: '';
     width: 0%;
     height: 3px;
-    background: purple;
+    background: rgb(246, 255, 0);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -66,7 +66,7 @@ width: 100%;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #6600FF;
+    color: #fffb00;
 }
 /*---------------about------------*/
 #about{
@@ -108,7 +108,7 @@ width: 100%;
     content: '';
     width: 0;
     height: 3px;
-    background: #6600FF;
+    background: #82bb9096;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -122,7 +122,7 @@ width: 100%;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #6600FF;
+    color: #bfff0098;
     font-size: 14px;
 }
 .tab-contents{
@@ -142,7 +142,7 @@ width: 100%;
     margin-top: 50px;
 }
 .services-list div{
-    background:  rgb(82, 75, 82);
+    background:  rgb(202, 205, 194);
     padding: 50px;
     font-size: 17px;
     font-weight: 300;
@@ -166,7 +166,7 @@ width: 100%;
     display: inline-block;
 }
 .services-list div:hover{
-    background: #6600FF;
+    background: #f6ff00;
     transform: translateY(-10px);
 }
 /*------portfolio------*/
@@ -197,7 +197,7 @@ width: 100%;
 .layer{
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #6600FF);
+    background: linear-gradient(rgba(217, 255, 0, 0.395), #a1e64c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -245,7 +245,7 @@ width: 100%;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #6600FF;
+    border: 1px solid #6d8a56;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
