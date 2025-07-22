@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(45, 25, 0);
+    background: rgb(78, 127, 59);
 color: rgb(215, 160, 42);
 }
 #header
 {
     width: 100%;
     height: 120vh;
-    background-image: url(images/jeffery\ .jpg);
+    background-image: url(images/download.jpg);
     background-size: cover ;
     background-position:  center;
 }
@@ -71,7 +71,7 @@ width: 100%;
 /*---------------about------------*/
 #about{
     padding: 80px 0;
-    color: #ABABAB;
+    color: #9ee271;
 }
 .row{
     display: flex;
