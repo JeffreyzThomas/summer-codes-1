@@ -11,16 +11,16 @@ HEIGHT = GRID_HEIGHT * GRID_SIZE
 #########################
 ########## 1.5 ##########
 MAP = ["WWWWWWWWWWWWWWWW",
-       "W              W",
-       "W              W",
+       "W         K    W",
+       "W KKKKKKKKKK   W",
        "W  W  KG       W",
        "W  WWWWWWWWWW  W",
-       "W              W",
-       "W      P       W",
-       "W  WWWWWWWWWW  W",
+       "W   KKKKKKKK K W",
+       "W     K P      W",
+       "W  WWWWWWWWWW KKW",
        "W      GK   W  W",
-       "W              W",
-       "W              D",
+       "W    K         W",
+       "W KKKKKKKKKKK  D",
        "WWWWWWWWWWWWWWWW"]
 #########################
 ########## 1.4 ##########
@@ -124,7 +124,7 @@ def on_key_down(key):
 #########################
 def DrawGameOver():
     screenMiddle = (WIDTH/2, HEIGHT/2)
-    screen.draw.text("I'm in your.", midbottom = screenMiddle, fontsize = GRID_SIZE*2, color='red', owidth = 1)
+    screen.draw.text("OVER!", midbottom = screenMiddle, fontsize = GRID_SIZE*2, color='red', owidth = 1)
 # Start the Pygame 
 SetupGame()
 pgzrun.go()
