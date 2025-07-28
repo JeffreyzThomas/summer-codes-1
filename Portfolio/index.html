@@ -1,169 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet", href="style.css">
-    <script src="https://kit.fontawesome.com/d346c08c8e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeffrey Z. Thomas Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/d346c08c8e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- Header -->
 <div id="header">
-     <div class = "container">
-        <nav>
-             <img src="images/HGPAssets_PrimaryLogo_Yellow.png" class="logo">
-             <ul>
-                 <li><a href ="Home">Home</a></li>
-                 <li><a href ="Home">About</a></li>
-                 <li><a href ="Home">Services</a></li>
-                <li><a href ="Home">Porfolio</a></li>
-                <li><a href ="Home">Contact</a></li>
-             </ul>
-         </nav>
-        <div class="header-text">
-             <p>Hidden Genius Project Student</p>
-             <h2>Hi! <span>Jeffrey</span> Z. <br>Thomas        </h2>
-         </div>
-     </div>
+  <div class="container">
+    <nav>
+      <img src="images/HGPAssets_PrimaryLogo_Yellow.png" class="logo" />
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Hidden Genius Project Student</p>
+      <h2>Hi! <span>Jeffrey</span> Z. Thomas</h2>
+    </div>
+  </div>
 </div>
-<!-----------about---------->
+
+<!-- About -->
 <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="download.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I am Jeffrey z. Thomas, and I am currently 15 being born in 05/16/2010.
-                    I go to Richmond high school as a freshmen going into. I am a member of the hidden Genius
-                    project as a Student.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Python:</span><br>Beginner</li>
-                        <li><span>HTML:</span><br>Beginner</li>
-                        <li><span>Game Dev:</span><br>Most deffinetly a beginner</li>
-                    </ul>
-                </div>
-                <div class="tab-contents"id="experience">
-                    <ul>
-                        <li><span>2022 - 2023</span><br></li>
-                        <li><span>2023 - 2024</span><br>Amazon ID Tech</li>
-                        <li><span>2025 - 2026 Current</span><br>The Hidden Genius Project</li>
-                    </ul>
-                </div>
-                <div class="tab-contents"id="education">
-                    <ul>
-                        <li><span>Dover Elementary school</span>
-                        <li><span> Helms middle school</span><br>
-                        <li><span>Richmond high school</span><br></li>
-                    </ul>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="download.jpg" alt="Profile Picture" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I am Jeffrey Z. Thomas, currently 15 years old, born on 05/16/2010.
+          I'm a freshman at Richmond High School and a student in the Hidden Genius Project.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
         </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Python:</span><br>Beginner</li>
+            <li><span>HTML:</span><br>Beginner</li>
+            <li><span>Game Dev:</span><br>Definitely a beginner</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2022 - 2023</span><br>Intro to Programming</li>
+            <li><span>2023 - 2024</span><br>Amazon ID Tech</li>
+            <li><span>2025 - 2026</span><br>The Hidden Genius Project</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Dover Elementary School</span></li>
+            <li><span>Helms Middle School</span></li>
+            <li><span>Richmond High School</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-<!-----------services---------->
+
+<!-- Services -->
 <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div class="service-col">
-                <i class="fa-solid fa-code"></i>
-                <h2>Game Development</h2>
-                <p>I can make games using Unity.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="service-col">
-                <i class="fa-solid fa-crop"></i>
-                <h2>Web Development</h2>
-                <p>I can make apps </p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="service-col">
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>Help with code</h2>
-                <p>I can help with code.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div class="service-col">
+        <i class="fa-solid fa-code"></i>
+        <h2>Game Development</h2>
+        <p>I can make games using Unity and Python.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="service-col">
+        <i class="fa-solid fa-crop"></i>
+        <h2>Web Development</h2>
+        <p>I can create websites using HTML and CSS.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="service-col">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Code Help</h2>
+        <p>I can help others understand and write code.</p>
+        <a href="#">Learn more</a>
+      </div>
     </div>
+  </div>
 </div>
-<!---------------portfolio------------->
+
+<!-- Portfolio -->
 <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.webp">
-                <div class="layer">
-                    <h3>Game Development</h3>
-                    <p>Games are more than just entertainment. They are powerful
-                        tools for connection, learning, and creativity. They ignite the
-                        imagination, encourage problem-solving, and help people develop
-                        valuable skills such as critical thinking, collaboration, and
-                        perseverance. Through challenges, storytelling, and interactive play,
-                        games have the unique ability to bring people together across cultures,
-                        ages, and backgrounds. Whether its the thrill of competition or the joy of
-                        shared discovery, games create meaningful experiences that leave lasting impressions.
-                        The games I create aim to capture this potential blending
-                        fun with purpose to inspire, engage, and unite.</p>
-                         <a href="#"><i class="fa-solid fa-gamepad"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/621675c05eb08a490b32f9f1_image+(1) (1).webp">
-                <div class="layer">
-                    <h3>Medical Passion</h3>
-<p>
-                     Learning about medicine pushes me to think deeply about how the human body works. 
-                     Also how we fight diseases. I’m especially interested in pathology because it helps uncover the hidden causes behind illnesses. 
-                     Studying medicine challenges me to stay curious, ask questions, and find real answers that can help save lives.
-                      I want to one day help people by discovering what’s wrong and helping doctors treat it.
-</p>
-</p>
-                         <a href="#"><i class="fa-solid fa-gamepad"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/3f2fd674a17d2d53970ec4e387f7e308e2aace7a.png">
-                <div class="layer">
-                    <h3>Code Help</h3>
-                    <p>Helping others with code does more than solve immediate problems.
-                        It strengthens your own skills, deepens your understanding, and
-                        fosters a spirit of collaboration. By sharing knowledge and offering
-                         support, you not only help others grow but also reinforce your own
-                         learning through teaching and practical application. This kind of
-                         mutual support builds trust, encourages innovation, and contributes
-                          to a more inclusive and empowered coding community where everyone
-                          has the opportunity to thrive.</p>
-                         <a href="#"><i class="fa-solid fa-code-compare"></i></a>
-                </div>
-            </div>
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.webp" />
+        <div class="layer">
+          <h3>Game Development</h3>
+          <p>
+            Games are more than just entertainment. They are tools for learning, connection, and creativity. The games I create aim to blend fun with purpose—to inspire and unite people.
+          </p>
+          <a href="#"><i class="fa-solid fa-gamepad"></i></a>
         </div>
-        <a
+      </div>
+      <div class="work">
+        <img src="images/621675c05eb08a490b32f9f1_image+(1) (1).webp" />
+        <div class="layer">
+          <h3>Medical Passion</h3>
+          <p>
+            Learning about medicine makes me curious about how the human body works. I'm especially interested in pathology because it uncovers the hidden causes behind illnesses. I hope to help doctors discover problems and treat them.
+          </p>
+          <a href="#"><i class="fa-solid fa-heart-pulse"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/3f2fd674a17d2d53970ec4e387f7e308e2aace7a.png" />
+        <div class="layer">
+          <h3>Code Help</h3>
+          <p>
+            Helping others with code builds stronger skills for everyone. Sharing what I know helps create a friendly, creative, and supportive coding community.
+          </p>
+          <a href="#"><i class="fa-solid fa-code-compare"></i></a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+<!-- Contact -->
+<div id="contact">
+  <div class="container">
+    <h1 class="sub-title">Contact Me</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Scripts -->
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-</body>
-</html>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let tablink of
+
+
+
+    
