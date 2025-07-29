@@ -45,9 +45,11 @@ def SetupGame():
     global gameOver
     global player # Define player as a global var that be accessed anywhere in your code
     global keysToCollect # A var to store all the keys the player needs to collect
+    global guard
     player = Actor("player", anchor=("left", "top")) # Create a new Actor & set its anchor
     gameOver = False
     keysToCollect = []
+    guard = []
     for y in range(GRID_HEIGHT): # Loop over each grid position 
         for x in range(GRID_WIDTH):
             square = MAP[y][x] # Extracts the character from the MAP variable
@@ -59,7 +61,12 @@ def SetupGame():
                 # Set the key's pos to this grid location
                 key.pos = GetScreenCoords(x, y)
                 # Add this key to our list of keys
-                keysToCollect.append(key)
+                keysToCollect.append(key) 
+            elif square == "D":
+                screen.blit("door", GetScreenCoords(x, y))
+                guard = Actor("guard" , anchor =("Left", "right"), pos = GetScreenCoords (x, y, ))
+                clear
+        guards.append(guards) # type: ignore
 #########################
 ########## 1.6 ##########
 def DrawScenery():
@@ -68,10 +75,12 @@ def DrawScenery():
             square = MAP[y][x]
             if square == "W":
                 screen.blit("wall", GetScreenCoords(x, y))
-            elif square == "D":
-                screen.blit("door", GetScreenCoords(x, y))
+           
 ########## 1.8, 3.1 ##########
+for guards in guards:
+    guard.draw()
 def DrawActors():
+    
     player.draw()
     for key in keysToCollect:
         key.draw()
@@ -137,7 +146,7 @@ pgzrun.go()
 
 
 
-4
+
 
 
 
