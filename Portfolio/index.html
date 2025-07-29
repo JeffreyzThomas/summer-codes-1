@@ -34,7 +34,7 @@
   <div class="container">
     <div class="row">
       <div class="about-col-1">
-        <img src="download.jpg" alt="Profile Picture" />
+        <img src="images/bl.jpg" alt="Profile Picture" />
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
@@ -44,23 +44,24 @@
         </p>
 
         <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+          <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+          <p class="tab-links" onclick="opentab('education', this)">Education</p>
         </div>
 
         <div class="tab-contents active-tab" id="skills">
           <ul>
             <li><span>Python:</span><br>Beginner</li>
             <li><span>HTML:</span><br>Beginner</li>
-            <li><span>Game Dev:</span><br>Definitely a beginner</li>
+            <li><span>Game Dev:</span><br> Beginner on python
+                                            decent on Unity</li>
           </ul>
         </div>
 
         <div class="tab-contents" id="experience">
           <ul>
-            <li><span>2022 - 2023</span><br>Intro to Programming</li>
-            <li><span>2023 - 2024</span><br>Amazon ID Tech</li>
+            <li><span>2022 - 2023</span><br>Intro to Prgramming</li>
+            <li><span>2023 - 2024</span><br>. </li>
             <li><span>2025 - 2026</span><br>The Hidden Genius Project</li>
           </ul>
         </div>
@@ -90,8 +91,8 @@
       </div>
       <div class="service-col">
         <i class="fa-solid fa-crop"></i>
-        <h2>Web Development</h2>
-        <p>I can create websites using HTML and CSS.</p>
+        <h2>Medical</h2>
+        <p></p>
         <a href="#">Learn more</a>
       </div>
       <div class="service-col">
@@ -161,9 +162,17 @@
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
 
-  function opentab(tabname) {
-    for (let tablink of
+  function opentab(tabname, element) {
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-tab");
+    }
+    element.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
 
-
-
-    
+</body>
+</html> 
