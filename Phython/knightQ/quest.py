@@ -1,26 +1,41 @@
 import pgzrun
 
-GRID_WIDTH = 16
-GRID_HEIGHT = 12
+GRID_WIDTH = 30
+GRID_HEIGHT = 25
 GRID_SIZE = 50
 WIDTH = GRID_WIDTH * GRID_SIZE
 HEIGHT = GRID_HEIGHT * GRID_SIZE
-GUARDMOVEINTERVAL = 0.5
+GUARDMOVEINTERVAL = 0.0000001
 
 MAP = [
-    "WWWWWWWWWWWWWWWW",
-    "W         K    W",
-    "W KKKKKKKKKK   W",
-    "W  W  KG       W",
-    "W  WWWWWWWWWW  W",
-    "W   KKKKKKKK K W",
-    "W     K P      W",
-    "W  WWWWWWWWWW KKW",
-    "W      GK   W  W",
-    "W    K         W",
-    "W KKKKKKKKKKK  D",
-    "WWWWWWWWWWWWWWWW"
+    "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+    "W       W         W          WW",
+    "W WWWWW W WWWWWW  W WWWWWWWW  W",
+    "W W   W W      W  W W      W  W",
+    "W W W W WWWWW  W  W W WWWW W  W",
+    "W W W W   G  WWW  W W W  W W  W",
+    "W W W WWWWWWWW     W W WW W  KW",
+    "W W   G           WWW W    W  W",
+    "W WWWWWWWWWWWWW WW   W WW W  W",
+    "W   W     W   W WW W W WW W  W",
+    "WWW WWW W W W W WW W W WW W  W",
+    "W     W W W W W WW W W    W  W",
+    "W WWWWW W W W W WW W WWWWWW WW",
+    "W W     W W W W    W  G     WW",
+    "W W WWWWW W W WWWWWWW WWWWWWWW",
+    "W W       W          W       W",
+    "W WWWWWWWWW WWWWWWWW W WWWWWWW",
+    "W       G     W      W W     W",
+    "WWWWWWWWWWWWWWW WWWWWW W WWWWW",
+    "W   W     W        W   W     W",
+    "W W W WWWWW WWWWW WW WWWWWWW W",
+    "W W W       W   W        G   W",
+    "W W WWWWWWWWW W WWWWWWWWWWW WW",
+    "W   W P         W           WW",
+    "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
 ]
+
+
 
 def GetScreenCoords(x, y):
     return (x * GRID_SIZE, y * GRID_SIZE)
