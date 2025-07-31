@@ -1,41 +1,34 @@
 import pgzrun
 
-GRID_WIDTH = 30
-GRID_HEIGHT = 25
+# Smaller grid
+GRID_WIDTH = 24
+GRID_HEIGHT = 20
 GRID_SIZE = 50
 WIDTH = GRID_WIDTH * GRID_SIZE
 HEIGHT = GRID_HEIGHT * GRID_SIZE
-GUARDMOVEINTERVAL = 0.0000001
 
+# Guard move interval slowed down
+GUARDMOVEINTERVAL = 0.1
+
+# Smaller map to fit screen
 MAP = [
-    "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
-    "W       W         W          WW",
-    "W WWWWW W WWWWWW  W WWWWWWWW  W",
-    "W W   W W      W  W W      W  W",
-    "W W W W WWWWW  W  W W WWWW W  W",
-    "W W W W   G  WWW  W W W  W W  W",
-    "W W W WWWWWWWW     W W WW W  KW",
-    "W W   G           WWW W    W  W",
-    "W WWWWWWWWWWWWW WW   W WW W  W",
-    "W   W     W   W WW W W WW W  W",
-    "WWW WWW W W W W WW W W WW W  W",
-    "W     W W W W W WW W W    W  W",
-    "W WWWWW W W W W WW W WWWWWW WW",
-    "W W     W W W W    W  G     WW",
-    "W W WWWWW W W WWWWWWW WWWWWWWW",
-    "W W       W          W       W",
-    "W WWWWWWWWW WWWWWWWW W WWWWWWW",
-    "W       G     W      W W     W",
-    "WWWWWWWWWWWWWWW WWWWWW W WWWWW",
-    "W   W     W        W   W     W",
-    "W W W WWWWW WWWWW WW WWWWWWW W",
-    "W W W       W   W        G   W",
-    "W W WWWWWWWWW W WWWWWWWWWWW WW",
-    "W   W P         W           WW",
-    "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+    "WWWWWWWWWWWWWWWWWWWWWWWW",
+    "W W W   G  WWW  W W W  W",
+    "W W WWWWWWWW     W W  KW",
+    "W W   G         WWW W  W",
+    "W WWWWWWWWWWW WW   W W W",
+    "W   W     W   WW W W W W",
+    "WWW                    W",
+    "W                      W",
+    "W WWWWW W W W WW W WWWWW",
+    "W W          PW  W  G  W",
+    "W W WWWWW W WWWWWWW WWWW",
+    "W W       W          W W",
+    "W WWWWWWWWW WWWWWWWW W W",
+    "W     G.               W",
+    "W              ww      W",
+    "WWWWWWWWWWWWWWWWWWWWWWWWW"
 ]
-
-
 
 def GetScreenCoords(x, y):
     return (x * GRID_SIZE, y * GRID_SIZE)
@@ -145,6 +138,10 @@ def MoveAllGuards():
         MoveGuard(guard)
 
 def on_key_down(key):
+    if gameOver:
+        if key == keys.R:
+            SetupGame()
+        return
     if key == keys.LEFT:
         MovePlayer(-1, 0)
     elif key == keys.UP:
@@ -157,27 +154,9 @@ def on_key_down(key):
 def DrawGameOver():
     screenMiddle = (WIDTH / 2, HEIGHT / 2)
     screen.draw.text("GAME OVER!", center=screenMiddle, fontsize=60, color="red")
+    screen.draw.text("Press R to Restart", center=(WIDTH / 2, HEIGHT / 2 + 50), fontsize=40, color="white")
 
 SetupGame()
 clock.schedule_interval(MoveAllGuards, GUARDMOVEINTERVAL)
 pgzrun.go()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  

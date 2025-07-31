@@ -9,7 +9,6 @@ GRID_WIDTH = 10
 GRID_HEIGHT = 8
 WIDTH = GRID_WIDTH * GRID_SIZE
 HEIGHT = GRID_HEIGHT * GRID_SIZE
-
 # Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -132,3 +131,4 @@ while running:
 
 pygame.quit()
 sys.exit()
+
